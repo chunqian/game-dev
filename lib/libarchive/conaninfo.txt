@@ -1,0 +1,75 @@
+[settings]
+    arch=x86
+    build_type=Release
+    compiler=gcc
+    compiler.version=10.2
+    os=Windows
+
+[requires]
+    libiconv/1.Y.Z
+    zlib/1.Y.Z
+
+[options]
+    shared=False
+    with_acl=True
+    with_bzip2=False
+    with_cng=False
+    with_expat=False
+    with_iconv=True
+    with_libb2=False
+    with_libxml2=False
+    with_lz4=False
+    with_lzma=False
+    with_lzo=False
+    with_nettle=False
+    with_openssl=False
+    with_pcreposix=False
+    with_zlib=True
+    with_zstd=False
+
+[full_settings]
+    arch=x86
+    build_type=Release
+    compiler=gcc
+    compiler.version=10.2
+    os=Windows
+
+[full_requires]
+    libiconv/1.16:e86d9266e0091537b02465f034f13e70aeefebfc
+    zlib/1.2.11:e86d9266e0091537b02465f034f13e70aeefebfc
+
+[full_options]
+    shared=False
+    with_acl=True
+    with_bzip2=False
+    with_cng=False
+    with_expat=False
+    with_iconv=True
+    with_libb2=False
+    with_libxml2=False
+    with_lz4=False
+    with_lzma=False
+    with_lzo=False
+    with_nettle=False
+    with_openssl=False
+    with_pcreposix=False
+    with_zlib=True
+    with_zstd=False
+    libiconv:shared=False
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+    7aa2f4749589490a5560f598c8fad48a
+
+[env]
+    AR=i686-w64-mingw32-ar
+    AS=i686-w64-mingw32-as
+    CC=i686-w64-mingw32-gcc
+    CHOST=i686-w64-mingw32
+    CONAN_CMAKE_FIND_ROOT_PATH=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686
+    CONAN_CMAKE_SYSROOT=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686
+    CXX=i686-w64-mingw32-g++
+    RANLIB=i686-w64-mingw32-ranlib
+    RC=i686-w64-mingw32-windres
+    STRIP=i686-w64-mingw32-strip

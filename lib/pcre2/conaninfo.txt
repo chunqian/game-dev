@@ -1,0 +1,60 @@
+[settings]
+    arch=x86
+    build_type=Release
+    compiler=gcc
+    compiler.version=10.2
+    os=Windows
+
+[requires]
+    bzip2/1.Y.Z
+    zlib/1.Y.Z
+
+[options]
+    build_pcre2_16=True
+    build_pcre2_32=True
+    build_pcre2_8=True
+    build_pcre2grep=True
+    shared=False
+    support_jit=False
+    with_bzip2=True
+    with_zlib=True
+
+[full_settings]
+    arch=x86
+    build_type=Release
+    compiler=gcc
+    compiler.version=10.2
+    os=Windows
+
+[full_requires]
+    bzip2/1.0.8:7fd90bea7527b1753894a3cca37e19e981bbe9a6
+    zlib/1.2.11:e86d9266e0091537b02465f034f13e70aeefebfc
+
+[full_options]
+    build_pcre2_16=True
+    build_pcre2_32=True
+    build_pcre2_8=True
+    build_pcre2grep=True
+    shared=False
+    support_jit=False
+    with_bzip2=True
+    with_zlib=True
+    bzip2:build_executable=True
+    bzip2:shared=False
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+    8578aae1c597359954f9de13bd409ca1
+
+[env]
+    AR=i686-w64-mingw32-ar
+    AS=i686-w64-mingw32-as
+    CC=i686-w64-mingw32-gcc
+    CHOST=i686-w64-mingw32
+    CONAN_CMAKE_FIND_ROOT_PATH=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686
+    CONAN_CMAKE_SYSROOT=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686
+    CXX=i686-w64-mingw32-g++
+    RANLIB=i686-w64-mingw32-ranlib
+    RC=i686-w64-mingw32-windres
+    STRIP=i686-w64-mingw32-strip

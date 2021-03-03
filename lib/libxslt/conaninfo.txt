@@ -1,0 +1,85 @@
+[settings]
+    arch=x86
+    build_type=Release
+    compiler=gcc
+    compiler.version=10.2
+    os=Windows
+
+[requires]
+    libxml2/2.Y.Z
+
+[options]
+    crypto=False
+    debugger=False
+    plugins=False
+    profiler=False
+    shared=False
+
+[full_settings]
+    arch=x86
+    build_type=Release
+    compiler=gcc
+    compiler.version=10.2
+    os=Windows
+
+[full_requires]
+    libiconv/1.16:e86d9266e0091537b02465f034f13e70aeefebfc
+    libxml2/2.9.10:597bccaad752a3c825c8149579ed0bf0e15b571a
+    zlib/1.2.11:e86d9266e0091537b02465f034f13e70aeefebfc
+
+[full_options]
+    crypto=False
+    debugger=False
+    plugins=False
+    profiler=False
+    shared=False
+    libiconv:shared=False
+    libxml2:c14n=True
+    libxml2:catalog=True
+    libxml2:docbook=True
+    libxml2:ftp=True
+    libxml2:html=True
+    libxml2:http=True
+    libxml2:iconv=True
+    libxml2:icu=False
+    libxml2:include_utils=False
+    libxml2:iso8859x=True
+    libxml2:legacy=True
+    libxml2:lzma=False
+    libxml2:mem-debug=False
+    libxml2:output=True
+    libxml2:pattern=True
+    libxml2:push=True
+    libxml2:python=False
+    libxml2:reader=True
+    libxml2:regexps=True
+    libxml2:run-debug=False
+    libxml2:sax1=True
+    libxml2:schemas=True
+    libxml2:schematron=True
+    libxml2:shared=False
+    libxml2:threads=True
+    libxml2:tree=True
+    libxml2:valid=True
+    libxml2:writer=True
+    libxml2:xinclude=True
+    libxml2:xpath=True
+    libxml2:xptr=True
+    libxml2:zlib=True
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+    a9212a6ac6c8365a5a8217ec405e4eb1
+
+[env]
+    AR=i686-w64-mingw32-ar
+    AS=i686-w64-mingw32-as
+    CC=i686-w64-mingw32-gcc
+    CHOST=i686-w64-mingw32
+    CONAN_CMAKE_FIND_ROOT_PATH=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686
+    CONAN_CMAKE_SYSROOT=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686
+    CXX=i686-w64-mingw32-g++
+    RANLIB=i686-w64-mingw32-ranlib
+    RC=i686-w64-mingw32-windres
+    STRIP=i686-w64-mingw32-strip

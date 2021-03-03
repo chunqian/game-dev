@@ -1,0 +1,87 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "bzip2:build_executable=True\nbzip2:shared=False\nlibarchive:shared=False\nlibarchive:with_acl=True\nlibarchive:with_bzip2=False\nlibarchive:with_cng=False\nlibarchive:with_expat=False\nlibarchive:with_iconv=True\nlibarchive:with_libb2=False\nlibarchive:with_libxml2=False\nlibarchive:with_lz4=False\nlibarchive:with_lzma=False\nlibarchive:with_lzo=False\nlibarchive:with_nettle=False\nlibarchive:with_openssl=False\nlibarchive:with_pcreposix=False\nlibarchive:with_zlib=True\nlibarchive:with_zstd=False\nlibiconv:shared=False\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:include_utils=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\nlibxslt:crypto=False\nlibxslt:debugger=False\nlibxslt:plugins=False\nlibxslt:profiler=False\nlibxslt:shared=False\npcre2:build_pcre2_16=True\npcre2:build_pcre2_32=True\npcre2:build_pcre2_8=True\npcre2:build_pcre2grep=True\npcre2:shared=False\npcre2:support_jit=False\npcre2:with_bzip2=True\npcre2:with_zlib=True\nzlib:minizip=False\nzlib:shared=False",
+    "requires": [
+     "1",
+     "4",
+     "6",
+     "7",
+     "5"
+    ],
+    "path": "conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "pcre2/10.35",
+    "options": "build_pcre2_16=True\nbuild_pcre2_32=True\nbuild_pcre2_8=True\nbuild_pcre2grep=True\nshared=False\nsupport_jit=False\nwith_bzip2=True\nwith_zlib=True\nbzip2:build_executable=True\nbzip2:shared=False\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "8727d9408e9a596f93f985319a7781850d615d02",
+    "prev": "0",
+    "modified": true,
+    "requires": [
+     "2",
+     "3"
+    ],
+    "context": "host"
+   },
+   "2": {
+    "ref": "zlib/1.2.11",
+    "options": "minizip=False\nshared=False",
+    "package_id": "e86d9266e0091537b02465f034f13e70aeefebfc",
+    "prev": "0",
+    "context": "host"
+   },
+   "3": {
+    "ref": "bzip2/1.0.8",
+    "options": "build_executable=True\nshared=False",
+    "package_id": "7fd90bea7527b1753894a3cca37e19e981bbe9a6",
+    "prev": "0",
+    "context": "host"
+   },
+   "4": {
+    "ref": "libxml2/2.9.10",
+    "options": "c14n=True\ncatalog=True\ndocbook=True\nftp=True\nhtml=True\nhttp=True\niconv=True\nicu=False\ninclude_utils=False\niso8859x=True\nlegacy=True\nlzma=False\nmem-debug=False\noutput=True\npattern=True\npush=True\npython=False\nreader=True\nregexps=True\nrun-debug=False\nsax1=True\nschemas=True\nschematron=True\nshared=False\nthreads=True\ntree=True\nvalid=True\nwriter=True\nxinclude=True\nxpath=True\nxptr=True\nzlib=True\nlibiconv:shared=False\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "597bccaad752a3c825c8149579ed0bf0e15b571a",
+    "prev": "0",
+    "requires": [
+     "2",
+     "5"
+    ],
+    "context": "host"
+   },
+   "5": {
+    "ref": "libiconv/1.16",
+    "options": "shared=False",
+    "package_id": "e86d9266e0091537b02465f034f13e70aeefebfc",
+    "prev": "0",
+    "context": "host"
+   },
+   "6": {
+    "ref": "libxslt/1.1.34",
+    "options": "crypto=False\ndebugger=False\nplugins=False\nprofiler=False\nshared=False\nlibiconv:shared=False\nlibxml2:c14n=True\nlibxml2:catalog=True\nlibxml2:docbook=True\nlibxml2:ftp=True\nlibxml2:html=True\nlibxml2:http=True\nlibxml2:iconv=True\nlibxml2:icu=False\nlibxml2:include_utils=False\nlibxml2:iso8859x=True\nlibxml2:legacy=True\nlibxml2:lzma=False\nlibxml2:mem-debug=False\nlibxml2:output=True\nlibxml2:pattern=True\nlibxml2:push=True\nlibxml2:python=False\nlibxml2:reader=True\nlibxml2:regexps=True\nlibxml2:run-debug=False\nlibxml2:sax1=True\nlibxml2:schemas=True\nlibxml2:schematron=True\nlibxml2:shared=False\nlibxml2:threads=True\nlibxml2:tree=True\nlibxml2:valid=True\nlibxml2:writer=True\nlibxml2:xinclude=True\nlibxml2:xpath=True\nlibxml2:xptr=True\nlibxml2:zlib=True\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "47d5dc7a06d401f3d20698fbabc901c34c25720f",
+    "prev": "0",
+    "requires": [
+     "4"
+    ],
+    "context": "host"
+   },
+   "7": {
+    "ref": "libarchive/3.5.1",
+    "options": "shared=False\nwith_acl=True\nwith_bzip2=False\nwith_cng=False\nwith_expat=False\nwith_iconv=True\nwith_libb2=False\nwith_libxml2=False\nwith_lz4=False\nwith_lzma=False\nwith_lzo=False\nwith_nettle=False\nwith_openssl=False\nwith_pcreposix=False\nwith_zlib=True\nwith_zstd=False\nlibiconv:shared=False\nzlib:minizip=False\nzlib:shared=False",
+    "package_id": "3f0bbacbf31362a2dabb1f0bac063179e1bc0fb6",
+    "prev": "0",
+    "requires": [
+     "2",
+     "5"
+    ],
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch=x86\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++11\ncompiler.version=10.2\nos=Windows\n[options]\n[build_requires]\n[env]\nAR=i686-w64-mingw32-ar\nAS=i686-w64-mingw32-as\nCC=i686-w64-mingw32-gcc\nCHOST=i686-w64-mingw32\nCONAN_CMAKE_FIND_ROOT_PATH=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686\nCONAN_CMAKE_SYSROOT=/usr/local/Cellar/mingw-w64/8.0.0_3/toolchain-i686\nCXX=i686-w64-mingw32-g++\nRANLIB=i686-w64-mingw32-ranlib\nRC=i686-w64-mingw32-windres\nSTRIP=i686-w64-mingw32-strip",
+ "profile_build": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=11.0\nos=Macos\nos_build=Macos\n[options]\n[build_requires]\n[env]\n"
+}

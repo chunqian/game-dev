@@ -1,0 +1,109 @@
+<dialog>
+    <!--<params>-->
+        <param-vbox name="myhbox">
+            <!-- this is an invalid class an will be ignored -->
+            <invalid>
+                <!-- All invalid parameter or attributes will be skipped or won't take effect like the callback -->
+                <param-str param="-" value=":c" >Langes Label:</param-str>
+                <param-str value=":c" >Langes Label:</param-str>
+                <param-str param="-" >Langes Label:</param-str>
+                <attr />
+                <attr name="false" />
+                <attr value="false" />
+                <callback event="ACTION" name="notexisttestcallback" />
+            </invalid>
+            <label>
+                <attrs value='TITLE="testlabel:"' />
+            </label>
+            <label><attrs value='TITLE="testlabel2:"' /></label>
+            <button>
+                <callback event="ACTION" name="testcallback" />
+                <userdata name="hero" value="testdata" />
+                <attrs value='TITLE="ein button",RASTERSIZE=125,FGCOLOR=#662211' />
+            </button>
+            <button>
+                <callback event="ACTION" name="testcallbacklnk" />
+                <!-- this an intern handle(parameter "ref" is missing) -->
+                <handle name="mylist" />
+                <attrs value=":c" >TITLE="Ein anderer Button", RASTERSIZE=125, FGCOLOR=#FF2266</attrs>
+            </button>
+            <flatbutton>
+                <attr name="TITLE" value="ein button" />
+                <callback event="FLAT_ACTION" name="testcallbacklnk" />
+                <!-- this handle is a reference to another xml resource "window" -->
+                <handle ref="window" name="mylist" />
+                <userdata name="hero" value="testdata" />
+            </flatbutton>
+            <label>
+                <!-- value=":c" means text content of node <attr>textcontent</attr> -->
+                <!-- this string is for parameter if needed -->
+                <!-- <string param="-" value=":c" >Langes Label:</string>-->
+                <param-str value=":c" ><![CDATA[<b>Ein super mega langes label</b>]]></param-str>
+                <attr name="ACTIVE" value="NO" />
+                <!--<attr name="TITLE" value=":c" >Langes Label:</attr>-->
+                <!--<attr name="RASTERSIZE" value="56" />-->
+                <!--<attr type="handle" name="IMAGE" value="image_handle_name" />-->
+            </label>
+            <list name="mylist">
+                <attr name="1" value="first" />
+                <attr name="2" value="second" />
+                <attr name="3" value="third" />
+                <attr name="4" value="fourth" />
+                <attr name="DROPDOWN" value="YES" />
+                <attr name="VALUE" value="3" />
+            </list>
+            <text name="mytext">
+                <attr name="VALUE" value="Some text isn't it?" />
+                <attr name="RASTERSIZE" value="125" />
+            </text>
+        </param-vbox>
+    <!--</params>-->
+    <attr name="TITLE" value="generic iup Dialog" />
+    <attr name="SIZE" value="HALFxHALF" />
+    <attr-menu name="MENU">
+        <submenu>
+            <param-str value="File" />
+            <param-menu>
+                <item>
+                    <param-str value="FileEntry1" />
+                    <param-null />
+                </item>
+                <submenu>
+                    <param-str value="Filesubmenu1" />
+                    <param-menu>
+                        <item>
+                            <attr name="TITLE" value="FileSubEntry1" />
+                            <param-null />
+                        </item>
+                        <item>
+                            <attr name="TITLE" value="FileSubEntry2" />
+                            <param-null />
+                        </item>
+                    </param-menu>
+                </submenu>
+            </param-menu>
+        </submenu>
+        <submenu>
+            <param-str value="Edit" />
+            <param-menu>
+                <item>
+                    <param-str value="EditEntry1" />
+                    <param-null />
+                </item>
+                <submenu>
+                    <param-str value="Editsubmenu1" />
+                    <param-menu>
+                        <item>
+                            <attr name="TITLE" value="EditSubEntry1" />
+                            <param-null />
+                        </item>
+                        <item>
+                            <attr name="TITLE" value="EditSubEntry1" />
+                            <param-null />
+                        </item>
+                    </param-menu>
+                </submenu>
+            </param-menu>
+        </submenu>
+    </attr-menu>
+</dialog>

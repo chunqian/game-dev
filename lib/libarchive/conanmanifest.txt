@@ -1,0 +1,6 @@
+1614755515
+conaninfo.txt: 69227cbc6f221687819ae47d779fdf53
+include/archive.h: 63ad45161e954c1dc88fa4c171f51687
+include/archive_entry.h: 0dad5431bce39103f0b378fd76fe1b4f
+lib/libarchive_static.a: 33e7d6e6d5585bd20dae572a6d6035ac
+licenses/COPYING: d499814247adaee08d88080841cb5665
